@@ -7,8 +7,9 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { DataContext } from '../hook/useData';
 
-export default function Screen() {
+export default function Screen(props) {
     const { getDetails } = useContext(DataContext);
+    const navigation = props.navigation;
     const [data, setData] = useState([]);
     useEffect(() => {
         async function featchData() {
@@ -23,13 +24,13 @@ export default function Screen() {
 
             <View style={{ flex: 1 }}>
                 <View>
-                    <Text style={{ fontSize: 23, color: 'White', margin: 10 }}>Top trending</Text>
+                    <Text style={{ fontSize: 23, color: 'White', margin: 10 }}>Show List</Text>
                     <FlatList
                         data={data}
                         renderItem={({ item, index, separators }) =>{ 
                             console.log(item._embedded.show.name)
                             return(
-                            <TouchableOpacity onPress={() => { alert("ok") }}>
+                            <TouchableOpacity onPress={() => {  navigation.navigate('Details', item); }}>
                                 <View style={styles.cardView}>
                                     <View >
                                         <Image source={{ uri: item._embedded.show.image.medium }}

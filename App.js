@@ -16,7 +16,7 @@ function AppStarting() {
       <Drawer.Navigator screenOptions={{
         headerShown: false,
       }}
-        initialRouteName='Details'
+        initialRouteName='Home'
       >
         <Drawer.Screen name="Home" component={HomeScreen} />
         <Drawer.Screen name="Data Screen" component={DataScreen} />
