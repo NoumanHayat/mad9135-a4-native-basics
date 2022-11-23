@@ -41,65 +41,7 @@ export default function Screen() {
         }
         featchData();
     }, []);
-    const DATA = [
-        {
-            id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28ba1',
-            title: 'First Item',
-        },
-        {
-            id: '3ac68afc-c605-48d3-a4f8-fbd91aa97f632',
-            title: 'Second Item',
-        },
-        {
-            id: '58694a0f-3da1-471f-bd96-145571e29d723',
-            title: 'Third Item',
-        },
-        {
-            id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28baa4',
-            title: 'First Item',
-        },
-        {
-            id: '3ac68afc-c605-48d3-a4f8-fbd91aa97f63s5',
-            title: 'Second Item',
-        },
-        {
-            id: '58694a0f-3da1-471f-bd96-145571e29d72w6',
-            title: 'Third Item',
-        },
-        //==================
-        {
-            id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28basa7',
-            title: 'First Item',
-        },
-        {
-            id: '3ac68afc-c605-48d3-a4f8-fbd91aa97f63s8',
-            title: 'Second Item',
-        },
-        {
-            id: '58694a0f-3da1-471f-bd96-145571e29d72s9',
-            title: 'Third Item',
-        },
-        {
-            id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28baas10',
-            title: 'First Item',
-        },
-        {
-            id: '3ac68afc-c605-48d3-a4f8-fbd91aa97f63ss11',
-            title: 'Second Item',
-        },
-        {
-            id: '58694a0f-3da1-471f-bd96-145571e29d72ws12',
-            title: 'Third Item',
-        },
-    ];
     return (
-        // <SafeAreaView style={styles.container}>
-        //     <FlatList
-        //         data={DATA}
-        //         renderItem={Card}
-        //         keyExtractor={item => item.id}
-        //     />
-        // </SafeAreaView>
         <SafeAreaView style={{ flex: 1, backgroundColor: '#FFFFFF' }}>
             {/* <LinearGradient
                 // Button Linear Gradient

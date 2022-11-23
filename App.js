@@ -7,17 +7,24 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import HomeScreen from './src/screen/Home';
 import DataScreen from './src/screen/DataScreen';
+import Details from './src/screen/Details';
 const Drawer = createDrawerNavigator();
 
 function AppStarting() {
-  return  (
+  return (
     <NavigationContainer>
       <Drawer.Navigator screenOptions={{
         headerShown: false,
       }}
+        initialRouteName='Details'
       >
         <Drawer.Screen name="Home" component={HomeScreen} />
         <Drawer.Screen name="Data Screen" component={DataScreen} />
+        <Drawer.Screen name="Details" component={Details} options={{
+          drawerLabel: () => null,
+          title: null,
+          drawerIcon: () => null
+        }} />
       </Drawer.Navigator>
     </NavigationContainer>
   );

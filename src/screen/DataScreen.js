@@ -7,30 +7,6 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { DataContext } from '../hook/useData';
 
-
-// const Card = ({ item }) => {
-//     console.log(item)
-
-//     return (
-//         <TouchableOpacity onPress={() => { alert("ok") }}>
-//             <View style={styles.cardView}>
-//                 <View >
-//                     <Image source={{ uri: "https://static.tvmaze.com/uploads/images/original_untouched/429/1073254.jpg" }}
-//                         style={{ width: 60, height: 60, borderRadius: 30 }} />
-//                 </View>
-//                 <View style={{ padding: 10 }} >
-//                     <Text style={{ fontSize: 17 }}>90 Day Pillow Talk: Happily Ever After?</Text>
-//                     <View style={{ flexDirection: 'row' }}>
-//                         <Text style={{ fontSize: 15 }}>type:Reality</Text>
-//                         <Text style={{ fontSize: 15, marginLeft: 20 }}>status:Running</Text>
-//                     </View>
-//                 </View>
-//             </View>
-//         </TouchableOpacity>
-//     )
-// }
-
-
 export default function Screen() {
     const { getDetails } = useContext(DataContext);
     const [data, setData] = useState([]);
@@ -42,57 +18,6 @@ export default function Screen() {
         }
         featchData();
     }, []);
-    const DATA = [
-        {
-            id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28ba1',
-            title: 'First Item',
-        },
-        {
-            id: '3ac68afc-c605-48d3-a4f8-fbd91aa97f632',
-            title: 'Second Item',
-        },
-        {
-            id: '58694a0f-3da1-471f-bd96-145571e29d723',
-            title: 'Third Item',
-        },
-        {
-            id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28baa4',
-            title: 'First Item',
-        },
-        {
-            id: '3ac68afc-c605-48d3-a4f8-fbd91aa97f63s5',
-            title: 'Second Item',
-        },
-        {
-            id: '58694a0f-3da1-471f-bd96-145571e29d72w6',
-            title: 'Third Item',
-        },
-        //==================
-        {
-            id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28basa7',
-            title: 'First Item',
-        },
-        {
-            id: '3ac68afc-c605-48d3-a4f8-fbd91aa97f63s8',
-            title: 'Second Item',
-        },
-        {
-            id: '58694a0f-3da1-471f-bd96-145571e29d72s9',
-            title: 'Third Item',
-        },
-        {
-            id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28baas10',
-            title: 'First Item',
-        },
-        {
-            id: '3ac68afc-c605-48d3-a4f8-fbd91aa97f63ss11',
-            title: 'Second Item',
-        },
-        {
-            id: '58694a0f-3da1-471f-bd96-145571e29d72ws12',
-            title: 'Third Item',
-        },
-    ];
     return (
         <SafeAreaView style={{ flex: 1, backgroundColor: '#FFFFFF' }}>
 
