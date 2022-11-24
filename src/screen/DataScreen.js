@@ -6,7 +6,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { DataContext } from '../hook/useData';
-
+import {styles} from '../style'
 export default function Screen(props) {
     const { getDetails } = useContext(DataContext);
     const navigation = props.navigation;
@@ -54,39 +54,3 @@ export default function Screen(props) {
         </SafeAreaView>
     );
 }
-const styles = StyleSheet.create({
-    bannerStyle: {
-        width: '100%', height: '30%', margin: 1, borderRadius: 30,
-    },
-    HeaderStyle: {
-        fontSize: 25,
-        // alignSelf: 'center',
-    },
-    tetStyle: {
-        fontSize: 15
-    },
-    HeaderView: {
-        justifyContent: 'center', alignContent: 'center',
-        backgroundColor: '#F7F7FE', borderRadius: 30, padding: 10, margin: 10, shadowColor: 'black',
-        shadowOffset: {
-            width: 10,
-            height: 10,
-        },
-        shadowOpacity: 0.5,
-        shadowRadius: 10,
-        elevation: 10,
-    },
-    cardView: {
-        // justifyContent: 'center', alignContent: 'center',
-        backgroundColor: '#F7F7FE', borderRadius: 30, padding: 10, margin: 10, shadowColor: 'black',
-        shadowOffset: {
-            width: 10,
-            height: 10,
-        },
-        shadowOpacity: 0.5,
-        shadowRadius: 10,
-        elevation: 10,
-        margin: 10,
-        flexDirection: 'row'
-    }
-});
