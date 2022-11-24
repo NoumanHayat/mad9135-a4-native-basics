@@ -14,7 +14,7 @@ function AppStarting() {
   return (
     <NavigationContainer>
       <Drawer.Navigator screenOptions={{
-        headerShown: false,
+        headerShown: true,
       }}
         initialRouteName='Home'
       >
